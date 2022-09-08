@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d829907-f3e8-4a86-afa2-f8cf222b47c5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\bin\git.exe" />
+  </component>
+  <component name="JupyterTrust" id="c2f44ad1-c0c9-4979-a829-db9ff7d78824" />
+  <component name="ProjectId" id="2CR5sDESHOKY4TW2pQn33BckUnF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yangy\Desktop\yolox\yolox-CXR14" />
+      <recent name="C:\Users\yangy\Desktop\yolox\yolox" />
+      <recent name="C:\Users\yangy\Desktop\yolox\yolox\utils" />
+      <recent name="C:\Users\admin\Desktop\yolox" />
+      <recent name="C:\Users\admin\Desktop\yolox\model_data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.calculation_results  ">
+    <configuration name="calculation_results  " type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yolox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\yangy\Desktop\yolox\yolox-CXR14\calculation_results  .py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yolox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_map.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yolox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils_map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yolox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/utils_map.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils_map2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yolox" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/utils_map2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.calculation_results  " />
+        <item itemvalue="Python.utils_map2" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.get_map" />
+        <item itemvalue="Python.utils_map" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d829907-f3e8-4a86-afa2-f8cf222b47c5" name="Default Changelist" comment="" />
+      <created>1658752760259</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658752760259</updated>
+      <workItem from="1658752762931" duration="644000" />
+      <workItem from="1658754316208" duration="12642000" />
+      <workItem from="1659084840964" duration="13767000" />
+      <workItem from="1659170848739" duration="5142000" />
+      <workItem from="1659316773036" duration="31768000" />
+      <workItem from="1659789369516" duration="8646000" />
+      <workItem from="1659860774718" duration="34528000" />
+      <workItem from="1660008861134" duration="6004000" />
+      <workItem from="1660100135172" duration="26000" />
+      <workItem from="1660133304054" duration="5371000" />
+      <workItem from="1660273835345" duration="4596000" />
+      <workItem from="1660356768534" duration="7627000" />
+      <workItem from="1660528937218" duration="2000" />
+      <workItem from="1660657545493" duration="1507000" />
+      <workItem from="1660698049314" duration="10986000" />
+      <workItem from="1660807677171" duration="5664000" />
+      <workItem from="1661404364793" duration="1797000" />
+      <workItem from="1661480760773" duration="2390000" />
+      <workItem from="1661657166121" duration="1924000" />
+      <workItem from="1661738583383" duration="1818000" />
+      <workItem from="1662624314318" duration="3776000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2472" y="174" key="#Deployment" timestamp="1658796957324">
+      <screen x="1920" y="0" width="1920" height="1032" />
+    </state>
+    <state x="2472" y="174" key="#Deployment/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1658796957324" />
+    <state x="552" y="174" key="#Deployment/0.0.1920.1032@0.0.1920.1032" timestamp="1658753209342" />
+    <state x="605" y="191" key="#Options" timestamp="1658753237698">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="605" y="191" key="#Options/0.0.1920.1032@0.0.1920.1032" timestamp="1658753237698" />
+    <state width="1353" height="466" key="DebuggerActiveHint" timestamp="1659887309750">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="1353" height="466" key="DebuggerActiveHint/0.0.2048.1104@0.0.2048.1104" timestamp="1659887309750" />
+    <state x="789" y="289" key="FileChooserDialogImpl" timestamp="1662636209595">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="2660" y="270" key="FileChooserDialogImpl/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1659085018016" />
+    <state x="740" y="270" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1658753116441" />
+    <state x="789" y="289" key="FileChooserDialogImpl/0.0.2048.1104@0.0.2048.1104" timestamp="1662636209595" />
+    <state width="2005" height="508" key="GridCell.Tab.0.bottom" timestamp="1661415438719">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="1877" height="762" key="GridCell.Tab.0.bottom/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1658828039204" />
+    <state width="1877" height="595" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1658793954797" />
+    <state width="2005" height="508" key="GridCell.Tab.0.bottom/0.0.2048.1104@0.0.2048.1104" timestamp="1661415438719" />
+    <state width="2005" height="508" key="GridCell.Tab.0.center" timestamp="1661415438719">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="1877" height="762" key="GridCell.Tab.0.center/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1658828039203" />
+    <state width="1877" height="595" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1658793954796" />
+    <state width="2005" height="508" key="GridCell.Tab.0.center/0.0.2048.1104@0.0.2048.1104" timestamp="1661415438719" />
+    <state width="2005" height="508" key="GridCell.Tab.0.left" timestamp="1661415438719">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="1877" height="762" key="GridCell.Tab.0.left/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1658828039202" />
+    <state width="1877" height="595" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1658793954795" />
+    <state width="2005" height="508" key="GridCell.Tab.0.left/0.0.2048.1104@0.0.2048.1104" timestamp="1661415438719" />
+    <state width="2005" height="508" key="GridCell.Tab.0.right" timestamp="1661415438719">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="1877" height="762" key="GridCell.Tab.0.right/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1658828039203" />
+    <state width="1877" height="595" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1658793954796" />
+    <state width="2005" height="508" key="GridCell.Tab.0.right/0.0.2048.1104@0.0.2048.1104" timestamp="1661415438719" />
+    <state width="2005" height="373" key="GridCell.Tab.1.bottom" timestamp="1660274047944">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2005" height="373" key="GridCell.Tab.1.bottom/0.0.2048.1104@0.0.2048.1104" timestamp="1660274047944" />
+    <state width="2005" height="373" key="GridCell.Tab.1.center" timestamp="1660274047944">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2005" height="373" key="GridCell.Tab.1.center/0.0.2048.1104@0.0.2048.1104" timestamp="1660274047944" />
+    <state width="2005" height="373" key="GridCell.Tab.1.left" timestamp="1660274047944">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2005" height="373" key="GridCell.Tab.1.left/0.0.2048.1104@0.0.2048.1104" timestamp="1660274047944" />
+    <state width="2005" height="373" key="GridCell.Tab.1.right" timestamp="1660274047944">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state width="2005" height="373" key="GridCell.Tab.1.right/0.0.2048.1104@0.0.2048.1104" timestamp="1660274047944" />
+    <state x="176" y="204" key="SettingsEditor" timestamp="1662636230720">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="2085" y="191" key="SettingsEditor/0.0.1536.816/1920.0.1920.1032@1920.0.1920.1032" timestamp="1658801126896" />
+    <state x="165" y="191" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1658754489274" />
+    <state x="176" y="204" key="SettingsEditor/0.0.2048.1104@0.0.2048.1104" timestamp="1662636230720" />
+    <state x="751" y="381" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1658753032126">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="751" y="381" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1920.1032@0.0.1920.1032" timestamp="1658753032126" />
+    <state x="838" y="246" width="603" height="539" key="ftp.server.browser" timestamp="1658754461556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="838" y="246" width="603" height="539" key="ftp.server.browser/0.0.1920.1032@0.0.1920.1032" timestamp="1658754461556" />
+    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup" timestamp="1660360875119">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup/0.0.2048.1104@0.0.2048.1104" timestamp="1660360875119" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/calculation_results  .py</url>
+          <line>47</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/calculation_results  .py</url>
+          <line>99</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/calculation_results  .py</url>
+          <line>395</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/yolox$utils_map2.coverage" NAME="utils_map2 Coverage Results" MODIFIED="1660273883738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/yolox$getmap.coverage" NAME="getmap Coverage Results" MODIFIED="1661404651068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yolox$utils_map.coverage" NAME="utils_map Coverage Results" MODIFIED="1659883347258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/yolox$get_map.coverage" NAME="get_map Coverage Results" MODIFIED="1659916848206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yolox$voc_annotation.coverage" NAME="voc_annotation Coverage Results" MODIFIED="1658756323150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yolox$train.coverage" NAME="train Coverage Results" MODIFIED="1658793952374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yolox$test.coverage" NAME="test Coverage Results" MODIFIED="1659923038071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
