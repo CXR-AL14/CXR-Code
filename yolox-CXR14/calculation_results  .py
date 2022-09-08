@@ -284,7 +284,7 @@ def draw_ap_by_noe(dfs, iou, hosptal=""):
         "Postoperative metal",  # 金属
         "Venipuncture"  # PICC
     ]
-    doctor_names = ["葛晓东", "韩双", "黎君", "刘国芳", "王兵", "张磊"]
+    doctor_names = ["Junior1", "Junior2", "Junior3", "Senior1", "Senior2", "Senior3"]
     for name in names:
         plt.subplot(4, 4, names.index(name) + 1)
         data = dfs[name]
@@ -308,10 +308,10 @@ def draw_ap_by_noe(dfs, iou, hosptal=""):
         for doctor_name in doctor_names:
             doc_da = doctor_data[doctor_data["doctor_name"] == doctor_name]
             da = doc_da[doc_da["classes"] == name].values.tolist()[0]
-            if doctor_name in ["王兵", "张磊", "刘国芳"]:  # 高级医生
+            if doctor_name in ["Senior1", "Senior2", "Senior3"]:  # 高级医生
                 l += 1
                 plt.scatter(da[3], da[2], marker="*", alpha=1, zorder=2, s=100, edgecolors="black")
-            elif doctor_name in ["葛晓东", "韩双", "黎君"]:  # 初级
+            elif doctor_name in ["Junior1", "Junior2", "Junior3"]:  # 初级
                 m += 1
                 plt.scatter(da[3], da[2], marker="^", alpha=1, s=100, edgecolors="black")
 
