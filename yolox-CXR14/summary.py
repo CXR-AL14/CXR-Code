@@ -7,6 +7,7 @@ from torchsummary import summary
 
 from nets.yolo import YoloBody
 
+
 if __name__ == "__main__":
     input_shape = [640, 640]
     num_classes = 80
