@@ -264,7 +264,7 @@ if __name__ == '__main__':
 
     device = torch.device("cuda:0")
     CTR = AttentionUnet.AttU_Net(3, 3)
-    state_dictunet = torch.load('66.pth', map_location=device)
+    state_dictunet = torch.load('model.pth', map_location=device)
     CTR.load_state_dict(state_dictunet)
     CTR.to(device)
     i = 0
