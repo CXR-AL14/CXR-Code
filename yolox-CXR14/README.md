@@ -61,7 +61,7 @@ _defaults = {
 ```
 3. ##### Run predict.py and enter
 ```python
-img/deom.jpg  
+img/demo.jpg  
 ```
 ## Evaluation steps
 1. ##### This paper uses VOC format for evaluation.  
