@@ -14,20 +14,20 @@ import xml.etree.ElementTree as ET
 
 def draw_ap(dfs, path, iou, hosptal=""):
     classnames = [
-        "Atelectasis",  # 肺不张
-        "Calcification",  # 钙化
-        "Consolidation",  # 实变
-        "Effusion",  # 积液
-        "Emphysema",  # 肺气肿
-        "Fibrosis",  # 纤维灶
-        "Fracture",  # 骨折
-        "Mass",  # 肿块
-        "Nodule",  # 结节
-        "Pleural thickening",  # 胸膜增厚
-        "Pneumatosis",  # 积气
-        "Pneumothorax",  # 气胸
-        "Postoperative metal",  # 金属
-        "Venipuncture"  # PICC
+        "Atelectasis",
+        "Calcification",
+        "Consolidation",
+        "Effusion",
+        "Emphysema",
+        "Fibrosis",
+        "Fracture",
+        "Mass",
+        "Nodule",
+        "Pleural thickening",
+        "Pneumatosis",
+        "Pneumothorax",
+        "Postoperative metal",
+        "Venipuncture"
     ]
     colors = [["#000000"], ["#800000"], ["#FF0000"], ["#FA8072"], ["#FFFF00"], ["#8B4513"], ["#FFA500"], ["#808000"],
               ["#7CFC00"], ["#006400"], ["#00FA9A"], ["#00BFFF"], ["#4169E1"], ["#800080"]]
@@ -184,7 +184,7 @@ def get_tpfpfn(conf_df, path, iou, hosptal=""):
     ]
 
     pre_dir = path + "/xmls"
-    gt_dir = r"C:\Users\yangy\Desktop\实验结果\Annotations\Annotations"
+    gt_dir = r"C:\Users\yangy\Desktop\result\Annotations\Annotations"
     sample = os.listdir(pre_dir)
     results = []
     for xml in tqdm(sample):
@@ -269,20 +269,20 @@ def draw_ap_by_noe(dfs, iou, hosptal=""):
         color = colors[0]
     fig = plt.figure(figsize=(16, 16), dpi=300)
     names = [
-        "Atelectasis",  # 肺不张
-        "Calcification",  # 钙化
-        "Consolidation",  # 实变
-        "Effusion",  # 积液
-        "Emphysema",  # 肺气肿
-        "Fibrosis",  # 纤维灶
-        "Fracture",  # 骨折
-        "Mass",  # 肿块
-        "Nodule",  # 结节
-        "Pleural thickening",  # 胸膜增厚
-        "Pneumatosis",  # 积气
-        "Pneumothorax",  # 气胸
-        "Postoperative metal",  # 金属
-        "Venipuncture"  # PICC
+        "Atelectasis",
+        "Calcification",
+        "Consolidation",
+        "Effusion",
+        "Emphysema",
+        "Fibrosis",
+        "Fracture",
+        "Mass",
+        "Nodule",
+        "Pleural thickening",
+        "Pneumatosis",
+        "Pneumothorax",
+        "Postoperative metal",
+        "Venipuncture"
     ]
     doctor_names = ["Junior1", "Junior2", "Junior3", "Senior1", "Senior2", "Senior3"]
     for name in names:
@@ -299,7 +299,7 @@ def draw_ap_by_noe(dfs, iou, hosptal=""):
         precision1 = precision.copy()
         recall1 = recall.copy()
         ap, mrec, mprec = voc_ap(recall, precision)
-        doctor_data = pd.read_csv(r"C:\Users\yangy\Desktop\实验结果\医生\reslut\%0.1f_doctors.csv" % iou, encoding="utf-8")
+        doctor_data = pd.read_csv(r"C:\Users\yangy\Desktop\experience\docotr\reslut\%0.1f_doctors.csv" % iou, encoding="utf-8")
         l, m = 0, 0
         plt.plot([0.0] + recall1 + [recall1[-1]], [precision1[0]] + precision1 + [0], linestyle='-', lw=2,
                  color="royalblue",
@@ -308,15 +308,15 @@ def draw_ap_by_noe(dfs, iou, hosptal=""):
         for doctor_name in doctor_names:
             doc_da = doctor_data[doctor_data["doctor_name"] == doctor_name]
             da = doc_da[doc_da["classes"] == name].values.tolist()[0]
-            if doctor_name in ["Senior1", "Senior2", "Senior3"]:  # 高级医生
+            if doctor_name in ["Senior1", "Senior2", "Senior3"]:
                 l += 1
                 plt.scatter(da[3], da[2], marker="*", alpha=1, zorder=2, s=100, edgecolors="black")
-            elif doctor_name in ["Junior1", "Junior2", "Junior3"]:  # 初级
+            elif doctor_name in ["Junior1", "Junior2", "Junior3"]:
                 m += 1
                 plt.scatter(da[3], da[2], marker="^", alpha=1, s=100, edgecolors="black")
 
             plt.scatter(temp[-3], temp[-2], s=100, color="orange", marker="p", edgecolors="black", alpha=1,
-                        zorder=2)  # 画点
+                        zorder=2)
         plt.title('%s' % name)
         plt.xlabel('Recall')
         plt.ylabel('Precision')
@@ -326,27 +326,27 @@ def draw_ap_by_noe(dfs, iou, hosptal=""):
         axes.set_ylim([0.0, 1.05])
 
     plt.show()
-    fig.savefig(os.path.join(path, "%0.1f_%s_Pr曲线2.pdf" % (iou, hosptal)))
+    fig.savefig(os.path.join(path, "%0.1f_%s_Pr2.pdf" % (iou, hosptal)))
 
 
 def draw_ap_by_three(hosptal=""):
     plt.rc('font', family='Times New Roman', size=15)
     fig = plt.figure(figsize=(16, 16), dpi=300)
     names = [
-        "Atelectasis",  # 肺不张
-        "Calcification",  # 钙化
-        "Consolidation",  # 实变
-        "Effusion",  # 积液
-        "Emphysema",  # 肺气肿
-        "Fibrosis",  # 纤维灶
-        "Fracture",  # 骨折
-        "Mass",  # 肿块
-        "Nodule",  # 结节
-        "Pleural thickening",  # 胸膜增厚
-        "Pneumatosis",  # 积气
-        "Pneumothorax",  # 气胸
-        "Postoperative metal",  # 金属
-        "Venipuncture"  # PICC
+        "Atelectasis",
+        "Calcification",
+        "Consolidation",
+        "Effusion",
+        "Emphysema",
+        "Fibrosis",
+        "Fracture",
+        "Mass",
+        "Nodule",
+        "Pleural thickening",
+        "Pneumatosis",
+        "Pneumothorax",
+        "Postoperative metal",
+        "Venipuncture"
     ]
     iouss = ["0.1", "0.3", "0.5"]
     colors = ["#029e73", "#0c39b9", "#de8f05"]
@@ -378,7 +378,7 @@ def draw_ap_by_three(hosptal=""):
         axes.set_ylim([0.0, 1.05])
 
     plt.show()
-    fig.savefig(os.path.join(path, "%s_Pr曲线3.pdf" % (hosptal)))
+    fig.savefig(os.path.join(path, "%s_Pr_.pdf" % (hosptal)))
 
 
 if __name__ == '__main__':

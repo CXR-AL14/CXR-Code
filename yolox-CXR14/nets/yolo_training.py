@@ -330,13 +330,7 @@ class YOLOLoss(nn.Module):
         #-------------------------------------------------------#
         matching_matrix         = torch.zeros_like(cost)
 
-        #------------------------------------------------------------#
-        #   选取iou最大的n_candidate_k个点
-        #   然后求和，判断应该有多少点用于该框预测
-        #   topk_ious           [num_gt, n_candidate_k]
-        #   dynamic_ks          [num_gt]
-        #   matching_matrix     [num_gt, fg_mask]
-        #------------------------------------------------------------#
+
         n_candidate_k           = min(10, pair_wise_ious.size(1))
         topk_ious, _            = torch.topk(pair_wise_ious, n_candidate_k, dim=1)
         dynamic_ks              = torch.clamp(topk_ious.sum(1).int(), min=1)
@@ -354,28 +348,18 @@ class YOLOLoss(nn.Module):
         #------------------------------------------------------------#
         anchor_matching_gt = matching_matrix.sum(0)
         if (anchor_matching_gt > 1).sum() > 0:
-            #------------------------------------------------------------#
-            #   当某一个特征点指向多个真实框的时候
-            #   选取cost最小的真实框。
-            #------------------------------------------------------------#
+
             _, cost_argmin = torch.min(cost[:, anchor_matching_gt > 1], dim=0)
             matching_matrix[:, anchor_matching_gt > 1] *= 0.0
             matching_matrix[cost_argmin, anchor_matching_gt > 1] = 1.0
-        #------------------------------------------------------------#
-        #   fg_mask_inboxes  [fg_mask]
-        #   num_fg为正样本的特征点个数
-        #------------------------------------------------------------#
+
         fg_mask_inboxes = matching_matrix.sum(0) > 0.0
         num_fg          = fg_mask_inboxes.sum().item()
 
-        #------------------------------------------------------------#
-        #   对fg_mask进行更新
-        #------------------------------------------------------------#
+
         fg_mask[fg_mask.clone()] = fg_mask_inboxes
 
-        #------------------------------------------------------------#
-        #   获得特征点对应的物品种类
-        #------------------------------------------------------------#
+
         matched_gt_inds     = matching_matrix[:, fg_mask_inboxes].argmax(0)
         gt_matched_classes  = gt_classes[matched_gt_inds]
 

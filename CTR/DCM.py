@@ -24,11 +24,11 @@ class Dicom:
             self.PatientBirthDate = None
         try:
             if dcm.PatientSex == "M":
-                self.PatientSex = "男"
+                self.PatientSex = "male"
             elif dcm.PatientSex == "F":
-                self.PatientSex = "女"
+                self.PatientSex = "female"
         except:
-            self.PatientSex = "未知"
+            self.PatientSex = "unknow"
         try:
             self.PatientAge = dcm.PatientAge
         except:
@@ -42,7 +42,7 @@ class Dicom:
         try:
             self.ViewPosition = dcm.ViewPosition
         except:
-            self.ViewPosition = "未知"
+            self.ViewPosition = "unknow"
         try:
             self.ImagerPixelSpacing = dcm.PixelSpacing
         except:
@@ -65,10 +65,7 @@ class Dicom:
             self.img_data = None
 
     def transform_Xraydata(self, img_data, windowWidth, windowCenter, normal=False):
-        """
-        注意，这个函数的self.image一定得是float类型的，否则就无效！
-        return: trucated image according to window center and window width
-        """
+
         minWindow = float(windowCenter) - 0.5 * float(windowWidth)
         newimg = (img_data - minWindow) / float(windowWidth)
         newimg[newimg < 0] = 0

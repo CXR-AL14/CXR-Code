@@ -107,33 +107,21 @@ class EvalCallback():
     def get_map_txt(self, image_id, image, class_names, map_out_path):
         f = open(os.path.join(map_out_path, "detection-results/"+image_id+".txt"),"w") 
         image_shape = np.array(np.shape(image)[0:2])
-        #---------------------------------------------------------#
-        #   在这里将图像转换成RGB图像，防止灰度图在预测时报错。
-        #   代码仅仅支持RGB图像的预测，所有其它类型的图像都会转化成RGB
-        #---------------------------------------------------------#
+
         image       = cvtColor(image)
-        #---------------------------------------------------------#
-        #   给图像增加灰条，实现不失真的resize
-        #   也可以直接resize进行识别
-        #---------------------------------------------------------#
+
         image_data  = resize_image(image, (self.input_shape[1],self.input_shape[0]), self.letterbox_image)
-        #---------------------------------------------------------#
-        #   添加上batch_size维度
-        #---------------------------------------------------------#
+
         image_data  = np.expand_dims(np.transpose(preprocess_input(np.array(image_data, dtype='float32')), (2, 0, 1)), 0)
 
         with torch.no_grad():
             images = torch.from_numpy(image_data)
             if self.cuda:
                 images = images.cuda()
-            #---------------------------------------------------------#
-            #   将图像输入网络当中进行预测！
-            #---------------------------------------------------------#
+
             outputs = self.net(images)
             outputs = decode_outputs(outputs, self.input_shape)
-            #---------------------------------------------------------#
-            #   将预测框进行堆叠，然后进行非极大抑制
-            #---------------------------------------------------------#
+
             results = non_max_suppression(outputs, self.num_classes, self.input_shape, 
                         image_shape, self.letterbox_image, conf_thres = self.confidence, nms_thres = self.nms_iou)
                                                     
@@ -176,22 +164,13 @@ class EvalCallback():
             for annotation_line in tqdm(self.val_lines):
                 line        = annotation_line.split()
                 image_id    = os.path.basename(line[0]).split('.')[0]
-                #------------------------------#
-                #   读取图像并转换成RGB图像
-                #------------------------------#
+
                 image       = Image.open(line[0])
-                #------------------------------#
-                #   获得预测框
-                #------------------------------#
+
                 gt_boxes    = np.array([np.array(list(map(int,box.split(',')))) for box in line[1:]])
-                #------------------------------#
-                #   获得预测txt
-                #------------------------------#
+
                 self.get_map_txt(image_id, image, self.class_names, self.map_out_path)
-                
-                #------------------------------#
-                #   获得真实框txt
-                #------------------------------#
+
                 with open(os.path.join(self.map_out_path, "ground-truth/"+image_id+".txt"), "w") as new_f:
                     for box in gt_boxes:
                         left, top, right, bottom, obj = box
